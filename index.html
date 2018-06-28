@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- para adaptarse a otros navegadores -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Mizu, ¡ahoga mis enojos!</title>
+</head>
+<body>
+
+	<!-- <audio controls autoplay>
+	  <source src="horse.ogg" type="audio/ogg">
+	  <source src="horse.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio> -->
+
+<header id="inicio">
+	<!-- NAVBAR -->
+	<div class="navigation">
+		<a href="#">Inicio</a>
+		<a href="#nosotros">¿Quiénes somos?</a>
+		<a href="">Descarga la App</a>
+		<a href="#contacto">Contáctanos</a>
+		<div class="dropdown">
+			<button class=" fa fa-bars dropbtn"></button>
+			<div class="dropdown-content">
+			    <a href="#">Paso 1</a>
+			    <a href="#paso2">Paso 2</a>
+			    <a href="#paso3">Paso 3</a>
+			    <a href="#paso4">Paso 4</a>
+			    <a href="#">Paso 5</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- PORTADA -->
+	<div>
+		<div class="center">
+			<h1>Mizu,</h1>
+			<h2 style="margin-top: 3px">¡ahoga mis enojos!</h2>
+		</div>
+
+		<div class="logo">
+			<img src="https://cdn.pixabay.com/photo/2017/09/30/20/11/monkey-2803416_960_720.png">
+		</div>
+
+		<div class="center" style="margin-top: 50px">
+			<h3>¿Cuál es tu nivel de enojo?</h3>
+			<a href="#paso2"><button class="button" type="button">Alto</button></a>
+			<button class="button" type="button">Bajo</button>
+		</div>
+	</div>
+</header>
+
+	<!-- Paso2 -->
+	<div id="paso2" class="paso2">
+		<p style="margin-top: 0px margin-bottom: 0px">Contemos hasta 10</p>
+		<button class="button" type="button" onclick="contando()" style="margin-top:10px">Comenzar</button>
+		<p style="font-size: 150px" id="counter"></p>
+		<h3 style="font-size: 16px">"La ira es un veneno que uno toma esperando que muera el otro"</h3>
+		<h3 style="font-size: 16px">(William Shakespeare)</h3>
+		<div>
+			<a style="text-decoration: none" href="#paso3"><button class="button" type="button">Siguiente</button></a>
+		</div>
+	</div>
+
+	<!-- Paso3 -->
+	<div class="paso3" id="paso3">
+		<h2 class="center">Técnicas de respiración</h2>
+		<div class="videos">
+			<iframe width="400" height="240" src="https://www.youtube.com/embed/I6fd7TxIIzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="400" height="240" src="https://www.youtube.com/embed/RCjlNuoryY8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="400" height="240" src="https://www.youtube.com/embed/FJlY5gT7ICk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="videos">
+			<iframe width="400" height="240" src="https://www.youtube.com/embed/PhhYvS0RjzI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="400" height="240" src="https://www.youtube.com/embed/2orNd9UZpFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe width="400" height="240" src="https://www.youtube.com/embed/TPWJrDZlTkE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="center" style="margin-top:10px">
+			<a href="#paso4" style="text-decoration: none"><button class="button" type="button">Siguiente</button></a>
+		</div>
+	</div>
+
+
+	<!-- QUIENES SOMOS -->
+	<div class="nosotros" id="nosotros">
+		<h2>¿Quiénes somos?</h2>
+		<h3>Nosotros somos un grupo de personas que vimos la necesidad de crear una página en la cual se pueda apoyar a las personas a controlar y ahogar sus enojo.</h3>
+		<img src="http://fruityhealing.com/wp-content/uploads/2015/10/large_monkey.png" style="width: 90%">
+	</div>
+
+	<!-- CONTACTANOS -->
+	<div class="contacto" id="contacto">
+		<h2 class="center">Contáctanos</h2>
+		<form>
+		<input type="text" name="Nombre" placeholder="Nombre">
+		<input type="email" name="Email" placeholder="Email">
+		<input type="text" name="Asunto" placeholder="Asunto">
+		<textarea id="subject" name="Comentarios" placeholder="Comentarios" style="height:1000px width:50% padding: 2px 2px"></textarea>
+		<button type="button">Enviar</button>
+		</form>
+	</div>
+
+
+
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
