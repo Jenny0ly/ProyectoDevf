@@ -5,70 +5,81 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- para adaptarse a otros navegadores -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Mizu, ¡ahoga mis enojos!</title>
+	<title>Mizu, Tu momento feliz</title>
 </head>
 <body>
-
-	<!-- <audio controls autoplay>
-	  <source src="horse.ogg" type="audio/ogg">
-	  <source src="horse.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
-	</audio> -->
 
 <header id="inicio">
 	<!-- NAVBAR -->
 	<div class="navigation">
 		<a href="#">Inicio</a>
 		<a href="#nosotros">¿Quiénes somos?</a>
-		<a href="">Descarga la App</a>
+		<a href="#app">Descarga la App</a>
 		<a href="#contacto">Contáctanos</a>
 		<div class="dropdown">
 			<button class=" fa fa-bars dropbtn"></button>
 			<div class="dropdown-content">
-			    <a href="#">Paso 1</a>
+			    <a href="#paso1">Paso 1</a>
 			    <a href="#paso2">Paso 2</a>
 			    <a href="#paso3">Paso 3</a>
 			    <a href="#paso4">Paso 4</a>
-			    <a href="#">Paso 5</a>
 			</div>
 		</div>
 	</div>
 	
-
 	<!-- PORTADA -->
 	<div>
-		<div class="center">
-			<h1>Mizu,</h1>
-			<h2 style="margin-top: 3px">¡ahoga mis enojos!</h2>
+		<div class="bienvenida" style="width: 40%">
+				<img src="./Imagenes/01.png">
+			<div class="logo">
+				<p style="text-align: right">Bienvenido!</p>
+			</div>
 		</div>
-
-		<div class="logo">
-			<img src="https://cdn.pixabay.com/photo/2017/09/30/20/11/monkey-2803416_960_720.png">
-		</div>
-
-		<div class="center" style="margin-top: 50px">
-			<h3>¿Cuál es tu nivel de enojo?</h3>
-			<a href="#paso2"><button class="button" type="button">Alto</button></a>
-			<button class="button" type="button">Bajo</button>
+		<div class="center" style="margin-top: 20px">
+			<h2>¿Qué tan enojado te sientes HOY?</h2>
+			<a href="#paso1"><button class="button" type="button">
+				<img src="./Imagenes/05.png">
+				<p style="width:150px;font-size: 20px;margin: 0px">MUY</p>
+				<p style="width:150px;font-size: 16px;margin: 0px">enojado</p>
+			</button></a>
+			<a href="#paso3"><button class="button" type="button">
+				<img src="./Imagenes/06.png">
+				<p style="width:150px;font-size: 20px;margin: 0px">POCO</p>
+				<p style="width:150px;font-size: 16px;margin: 0px">enojado</p>
+			</button></a>
 		</div>
 	</div>
 </header>
 
+	<!-- Paso1 -->
+	<div id="paso1" style="margin-top: 100px">
+        <p class="cuentanos" style="margin-bottom: 3px">¿Quieres contarnos algo?</p>
+        <img src="./Imagenes/02.png" alt="mizu" class="centrar">
+    </div>
+
+    <div>
+        <textarea rows="3" cols="40" placeholder="Escribe aquí ... TODO lo que necesites decir" style="height:2000px width:60% padding: 2px 2px"></textarea>
+    </div>
+    <div class="contacto"  style="margin-top:30px;border:none">
+			<a href="#paso2" style="text-decoration: none"><button class="button" type="button">Siguiente</button></a>
+	</div>
+
 	<!-- Paso2 -->
-	<div id="paso2" class="paso2">
-		<p style="margin-top: 0px margin-bottom: 0px">Contemos hasta 10</p>
+	<div id="paso2" class="" style="margin-top:100px">
+		<h2 class="cuentanos" style="margin-bottom: 0px;">Tómate unos segundos....</h2>
+		<h2 class="cuentanos" style="border:none;margin-top: 5px">Cuenta conmigo....</h2>
+		<div class="contacto"  style="margin-top:8px;border:none;margin-bottom: 20px">
 		<button class="button" type="button" onclick="contando()" style="margin-top:10px">Comenzar</button>
-		<p style="font-size: 150px" id="counter"></p>
-		<h3 style="font-size: 16px">"La ira es un veneno que uno toma esperando que muera el otro"</h3>
-		<h3 style="font-size: 16px">(William Shakespeare)</h3>
-		<div>
-			<a style="text-decoration: none" href="#paso3"><button class="button" type="button">Siguiente</button></a>
+		</div>
+		<p style="font-size: 150px;margin-top:30px" id="counter" class="contador">0</p>
+		<div class="contacto"  style="margin-top:30px;border:none;margin-bottom: 20px">
+			<a href="#paso3" style="text-decoration: none"><button class="button" type="button">Siguiente</button></a>
 		</div>
 	</div>
 
 	<!-- Paso3 -->
-	<div class="paso3" id="paso3">
-		<h2 class="center">Técnicas de respiración</h2>
+	<div class="paso3" id="paso3" style="margin-top: 100px">
+		<h2 class="cuentanos" style="margin-bottom: 5px;">Técnicas de respiración</h2>
 		<div class="videos">
 			<iframe width="400" height="240" src="https://www.youtube.com/embed/I6fd7TxIIzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			<iframe width="400" height="240" src="https://www.youtube.com/embed/RCjlNuoryY8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -79,32 +90,51 @@
 			<iframe width="400" height="240" src="https://www.youtube.com/embed/2orNd9UZpFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			<iframe width="400" height="240" src="https://www.youtube.com/embed/TPWJrDZlTkE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
-		<div class="center" style="margin-top:10px">
+		<div class="contacto" style="margin-top:10px;border:none;margin-bottom: 20px">
 			<a href="#paso4" style="text-decoration: none"><button class="button" type="button">Siguiente</button></a>
 		</div>
 	</div>
 
+	<!-- Paso 4 -->
+	<div id="paso4">
+        <p class="musica">Esto te encantará...</p>
+        <img src="./Imagenes/02.png" alt="mizu" class="centrar">
+        <audio controls class="audio" style="margin-top: 100px">
+                <source src="./Audio/NirinjanKaurOng Namo.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+              </audio>
+    </div>
 
 	<!-- QUIENES SOMOS -->
-	<div class="nosotros" id="nosotros">
-		<h2>¿Quiénes somos?</h2>
-		<h3>Nosotros somos un grupo de personas que vimos la necesidad de crear una página en la cual se pueda apoyar a las personas a controlar y ahogar sus enojo.</h3>
-		<img src="http://fruityhealing.com/wp-content/uploads/2015/10/large_monkey.png" style="width: 90%">
+	<div class="nosotros" id="nosotros" style="margin-top: 100px">
+		<h2 style="margin-top: 50px">¿Quiénes somos?</h2>
+		<h3 style="margin-top: 50px">Nosotros somos un grupo de personas que vimos la necesidad de crear una página en la cual se pueda apoyar a las personas a controlar y ahogar sus enojo.</h3>
+		<img src="./Imagenes/01.png" style="width: 90%;margin-top: 50px">
 	</div>
 
+	<!-- APP -->
+	<div id="app" class="gracias" style="margin-bottom: 5px">
+        <p>GRACIAS</p>
+        <p>por tu atención...¿Crees que lo logramos contigo?</p>
+        <p style="padding: 50px">Baja nuestra app</p>
+        <img src="./Imagenes/03.png" alt="mizu" class="valoracion">
+    </div>
+
 	<!-- CONTACTANOS -->
-	<div class="contacto" id="contacto">
-		<h2 class="center">Contáctanos</h2>
+	<div class="contacto" id="contacto" style="margin-bottom: 10px">
+		<h2 class="center" style="margin-top: 30px">Contáctanos</h2>
 		<form>
+	</div>
+	<div style="margin-top: 10px">
 		<input type="text" name="Nombre" placeholder="Nombre">
 		<input type="email" name="Email" placeholder="Email">
 		<input type="text" name="Asunto" placeholder="Asunto">
 		<textarea id="subject" name="Comentarios" placeholder="Comentarios" style="height:1000px width:50% padding: 2px 2px"></textarea>
+		<div class="contacto" style="border:none;margin-top:10px">
 		<button type="button">Enviar</button>
+		</div>
 		</form>
 	</div>
-
-
 
 	<script type="text/javascript" src="./app.js"></script>
 </body>
